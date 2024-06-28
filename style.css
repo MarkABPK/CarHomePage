@@ -148,8 +148,8 @@ header{
 
 .bottom-center{
     position: absolute;
-    bottom: 10rem;
-    left: 25%;
+    bottom: 9rem;
+    left: 16%;
 }
 
 .bottom-center, .top-left{
@@ -223,7 +223,7 @@ header{
 
 .second{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
 }
@@ -238,3 +238,116 @@ footer{
     text-align: center;
 }
 /*footer end*/
+
+
+@media screen and (max-width: 1080px) {
+    .top-left{
+    position: absolute;
+      top: 10rem;
+      left: 10rem;
+      font-size: 20px;
+    }
+    
+    .top-left-small{
+        position: absolute;
+        top: 13.5rem;
+        left: 10rem;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000;
+        background-color: rgba(0, 255, 255, 0.834);
+        opacity: 0.5;
+    }
+    
+    .bottom-center{
+        position: absolute;
+        bottom: 5rem;
+        left: 20%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .top-left{
+        position: absolute;
+          top: 7rem;
+          left: 8rem;
+          font-size: 18px;
+        }
+        
+        .top-left-small{
+            position: absolute;
+            top: 10.5rem;
+            left: 9rem;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000000;
+            background-color: rgba(0, 255, 255, 0.834);
+            opacity: 0.5;
+        } 
+
+        .first .text p, .second .text2 p{
+            text-wrap: wrap;
+            text-align: justify;
+            line-height: 1.5;
+            margin: 10px 20px;
+            font-size: 14px;
+        }
+        
+        .first .text h1, .second .text2 h1{
+            text-align: center;
+            
+        }
+}
+
+@media screen and (max-width: 760px) {
+    .top-left{
+        position: absolute;
+          top: 6rem;
+          left: 8rem;
+          font-size: 18px;
+        }
+        
+        .top-left-small{
+            position: absolute;
+            top: 9.5rem;
+            left: 9rem;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000000;
+            background-color: rgba(0, 255, 255, 0.834);
+            opacity: 0.5;
+        } 
+
+        .second{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            
+            
+        }
+
+        .second video{
+            height: 300px;
+            width: 300px;
+            margin: 20px 30px;
+           
+        }
+
+        .first video{
+            width: 300px;
+            height: 400px;
+            margin: 10px 20px;
+            float: left;
+        }
+
+        .first .text p, .second .text2 p{
+            text-wrap: wrap;
+            text-align: justify;
+            line-height: 1.5;
+            margin: 10px 10px;
+            font-size: 12px;
+        }
+    
+}
