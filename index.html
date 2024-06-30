@@ -20,7 +20,7 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
 
-        <a href="https://login.bmwusa.com/oneid/#/login?client=usahub&brand=bmw&country=US&language=en&scope=authenticate_user&response_type=code&redirect_uri=https://mybmw.bmwusa.com/sso&state=%2Fterms%2Faccept?language=en" class="btn">Sign In</a>
+        <button class="btn" onclick="document.getElementById('form-container').style.display='block'">Sign In</button>
         
     </header>
     <!--nevigation-->
@@ -33,6 +33,39 @@
             <div class="top-left-small">Introducing the best car ever.</div>
             <div class="bottom-center">Nobody is perfect. But if you drive a BMW, you're pretty close.</div>
         </section>
+
+
+        <!---LoginForm-->
+        <div id="form-container">
+        
+            <form class="registeration-form animate">
+                <h1>BMW Registration Form</h1>
+               <span>Already have a BMW ID? Login <a href="#">here.</a></span>
+    
+                <label for="fname">First name*</label>
+                <input type="text" id="fname" name="fname" required>
+    
+                <label for="Lname">Last name*</label>
+                <input type="text" id="fname" name="fname" required>
+    
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="password">Passoword*</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div class="bottom-btn">
+                    <button class="btn-reg"><a>Register</a></button>
+                    <button class="btn-cancel" onclick="document.getElementById('form-container').style.display='none'"><a>Cancel</a></button>
+    
+                </div>
+                
+    
+            </form>
+        </div>
+        <!---LoginForm-->
+    
+        
 
         <section class="detail">
             <div class="first">
@@ -68,5 +101,17 @@
         <p>BMW AG 2024</p>
     </footer>
     <!--footer end-->
+
+    <!--login form close when click on out side the form-->
+    <script>
+        var form_container = document.getElementById("form-container");
+
+        window.onclick = function(close) {
+            if (close.target == form_container) {
+                form_container.style.display = "none";
+            }
+        }
+    </script>
+    <!--login form close when click on out side the form-->
 </body>
 </html>
