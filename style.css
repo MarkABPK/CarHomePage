@@ -380,28 +380,33 @@ footer{
   background-color: rgb(162, 197, 203);
   width: 40rem;
   border: black solid 2pt;
-  padding: 20px 150px 20px 130px;
+  padding: 20px 100px 20px 130px;
   margin-top: 20px;
   border-radius: 2rem;
   margin: 5% auto 15% auto;
 
 }
 
+.title-BMW, .signin-BMW{
+  text-align: center;
+
+}
 
 
 
-label{
+
+.label-login{
   font-size: 20px;
   font-weight: bold;
 }
 
-input{
-  width: 20rem;
+.input-login{
+  width: 380px;
   height: 30px;
   background-color: #babcbc ;
 }
 
-label, input{
+.label-login, .input-login{
   margin: 10px;
 }
 
@@ -449,3 +454,45 @@ label, input{
 }
 
 /*Registration Form End*/
+
+
+/*search*/
+
+#search-bar{
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto scroll; 
+  scroll-behavior: smooth;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  
+}
+
+.search-form{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(162, 197, 203);
+  width: 40rem;
+  border: black solid 2pt;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 5% auto 15% auto;
+  width: 100%;
+}
+
+.type-search{
+  width: 50%;
+  height: 2rem;
+}
+
+.search-btn{
+  width: 2rem;
+  height: 2rem;
+}
+
+
+
+/*search end*/

@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+     <!--nevigation-->
+     <header>
+        <a class="logo" href="https://www.bmw.com/en/index.html">
+            <img src="./image/Logo.png" alt="logo" >B M W
+        </a>
+        
+        <ul class="navbar">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="search.html" class="active">Search</a></li>
+            <li><a href="models.html">Models & Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <button class="btn" onclick="document.getElementById('form-container').style.display='block'">Sign In</button>
+        
+    </header>
+    <!--nevigation-->
+
+
+    <!---LoginForm-->
+    <div id="form-container">
+        
+        <form class="registeration-form animate">
+            <h1 class="title-BMW">BMW Registration Form</h1>
+           <span class="signin-BMW">Already have a BMW ID? Login <a href="#">here.</a></span>
+
+            <label class="label-login" for="fname">First name*</label>
+            <input class="input-login" type="text" id="fname" name="fname" required>
+
+            <label class="label-login" for="Lname">Last name*</label>
+            <input class="input-login" type="text" id="fname" name="fname" required>
+
+            <label class="label-login" for="email">Email Address*</label>
+            <input class="input-login" type="email" id="email" name="email" required>
+
+            <label class="label-login" for="password">Passoword*</label>
+            <input class="input-login" type="password" id="password" name="password" required>
+            
+            <div class="bottom-btn">
+                <button class="btn-reg"><a>Register</a></button>
+                <button class="btn-cancel" onclick="document.getElementById('form-container').style.display='none'"><a>Cancel</a></button>
+
+            </div>
+            
+
+        </form>
+    </div>
+    <!---LoginForm-->
+
+    <div id="search-bar">
+        <form class="search-form">
+            <input  class="type-search" type="text" placeholder="Search.." name="search">
+            <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+          </form>
+    </div>
+    
+</body>
+</html>
