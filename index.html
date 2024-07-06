@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMW</title>
     <link rel="stylesheet" href="style.css">
+    <script src="changimage.js"></script>
    
 </head>
 <body>
@@ -28,7 +29,15 @@
     <!---body-->
     <main>
         <section class="cover">
-            <img src="./image/cover.jpg" alt="BMW">
+            <div class="cover-display-container">
+                <img class="mySlides" style="display: block;" src="./image/cover.jpg" style="width:100%">
+                <img class="mySlides" src="./image/cover2.jpg" style="width:100%">
+                <img class="mySlides" src="./image/cover3.jpg" style="width:100%">
+                <img class="mySlides" src="./image/cover4.jpg" style="width:100%">
+              
+                <button class="previous" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="next" onclick="plusDivs(1)">&#10095;</button>
+              </div>
             <div class="top-left">DESTINED FOR GREATNESS</div>
             <div class="top-left-small">Introducing the best car ever.</div>
             <div class="bottom-center">Nobody is perfect. But if you drive a BMW, you're pretty close.</div>

@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 <body>
+    <!--background-->
+    <video autoplay muted loop id="intro" onclick="document.getElementById('example-items').style.display='none'">
+        <source src="./image/About.mp4" type="video/mp4">
+    </video>
+    <!--background-->
+
+
+
+
      <!--nevigation-->
      <header>
         <a class="logo" href="https://www.bmw.com/en/index.html">
@@ -24,6 +33,70 @@
         
     </header>
     <!--nevigation-->
+
+
+    <!--Search Example-->
+    <div class="search-content"> 
+        <div class="search-bar">
+            <input  class="type-search origin" type="text" placeholder="Search.." name="search" onclick="document.getElementById('example-items').style.display='block'">
+            <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+        </div>
+       
+        
+    
+
+    <!--popular search items-->
+        <div id="example-items">
+            <h3 for="medels" >Mostly Searched Models</h3>
+            <span onclick="document.getElementById('example-items').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+        
+        
+            <div class="most-search-cars">
+                <div class="models">
+                    <img class="cars model1" src="./image/BMWM8.png" alt="M8">
+                    <h3 class="desc">BMW M8</h3>
+                </div>
+
+
+                <div class="models">
+                    <img class="cars model2" src="./image/BMWM2.png" alt="M2">
+                    <h3 class="desc">BMW M2</h3>
+                </div>
+
+                <div class="models">
+                    <img class="cars model3" src="./image/BMW4series.png" alt="M4Series">
+                    <h3 class="desc">BMW M4 Series</h3>
+                </div>
+
+                <div class="models">
+                    <img class="cars model4" src="./image/BMWX5.png" alt="X5">
+                    <h3 class="desc">BMW X5</h3>
+                 </div>
+
+                <div class="models">
+                    <img class="cars model5" src="./image/BMWXM.png" alt="XM">
+                    <h3 class="desc">BMW XM</h3>
+                </div>
+
+                <div class="models">
+                    <img class="cars model6" src="./image/BMWiX2.png" alt="iX2">
+                    <h3 class="desc">BMW iX2</h3>
+                </div>
+
+            </div>
+        </div>
+   <!--popular search items-->
+        
+       
+        
+   
+</div>
+
+
+
+
+<!--Search Example-->
 
 
     <!---LoginForm-->
@@ -56,12 +129,19 @@
     </div>
     <!---LoginForm-->
 
-    <div id="search-bar">
-        <form class="search-form">
-            <input  class="type-search" type="text" placeholder="Search.." name="search">
-            <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
-          </form>
-    </div>
+   
     
+
+    <!--login form close when click on out side the form-->
+    <script>
+        var form_container = document.getElementById("form-container");
+
+        window.onclick = function(close) {
+            if (close.target == form_container) {
+                form_container.style.display = "none";
+            }
+        }
+    </script>
+    <!--login form close when click on out side the form-->
 </body>
 </html>
