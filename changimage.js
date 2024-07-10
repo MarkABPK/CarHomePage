@@ -17,3 +17,10 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 
+var form_container = document.getElementById("form-container");
+
+        window.onclick = function(close) {
+            if (close.target == form_container) {
+                form_container.style.display = "none";
+            }
+        }
