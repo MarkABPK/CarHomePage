@@ -1,3 +1,6 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +21,8 @@ body{
     background-color: #8fbfdf;
 
 }
+
+
 
 /*navigation bar*/
 header{
@@ -186,51 +191,65 @@ header{
 
 .top-left{
     position: absolute;
-  top: 10rem;
-  left: 10rem;
+    top: 5rem;
+    left: 10rem;
+    font-size: 45px;
+    background: linear-gradient(to right,rgb(153, 245, 255) 0%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    box-shadow: 0 1px #c2c2c2c2;
+  }
+
+@keyframes slidein {
+  from{
+    transform: translate(-350px);
+  }
+  to{
+    transform: translate(0);
+  }
 }
 
 .top-left-small{
-    position: absolute;
-    top: 13.5rem;
-    left: 20rem;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000000;
-    background-color: rgba(0, 255, 255, 0.834);
-    opacity: 0.5;
-}
+  position: absolute;
+  top: 9rem;
+  left: 15rem;
+  font-size: 20px;
+  font-weight: 1000;
+  background: linear-gradient(to right,rgba(162, 163, 163, 0.922) 0%,rgb(145, 255, 244) ,rgb(66, 157, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+} 
 
 .bottom-center{
-    position: absolute;
-    bottom: 9rem;
-    left: 16%;
+  position: absolute;
+  bottom: 4rem;
+  left: 5%;
+  font-size: 40px;
+  background: linear-gradient(45deg, rgb(135, 217, 238), rgb(146, 129, 255), rgb(255, 124, 124));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  box-shadow: 1px 1px rgb(255, 0, 0);
+  z-index: 100;
 }
 
-.bottom-center, .top-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    background-color: grey;
-    height: 50px;
-    background: transparent;
-    box-shadow: 1px 2px 1px rgb(61, 238, 251);
-    font-weight: bold;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #0fd7ff, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
+@keyframes fadein {
+  0%{
+    opacity: 0;
   }
+
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+
+    
+  
+
 
 
 /*cover end*/
@@ -298,49 +317,70 @@ footer{
 @media screen and (max-width: 1080px) {
     .top-left{
     position: absolute;
-      top: 10rem;
+      top: 5rem;
       left: 10rem;
-      font-size: 20px;
+      font-size: 30px;
+      background: linear-gradient(to right,rgb(153, 245, 255) 0%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    box-shadow: 0 1px #c2c2c2c2;
     }
     
     .top-left-small{
-        position: absolute;
-        top: 13.5rem;
-        left: 10rem;
-        font-size: 16px;
-        font-weight: bold;
-        color: #000000;
-        background-color: rgba(0, 255, 255, 0.834);
-        opacity: 0.5;
-    }
+      position: absolute;
+      top: 8rem;
+      left: 10rem;
+      font-size: 20px;
+      font-weight: 1000;
+      background: linear-gradient(to right,rgba(162, 163, 163, 0.922) 0%,rgb(145, 255, 244) ,rgb(66, 157, 255) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+} 
     
     .bottom-center{
         position: absolute;
-        bottom: 5rem;
-        left: 20%;
-        font-size: 20px;
+        bottom: 4rem;
+        left: 5%;
+        font-size: 25px;
+        background: linear-gradient(45deg, rgb(135, 217, 238), rgb(146, 129, 255), rgb(255, 124, 124));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 1000;
+        box-shadow: 1px 1px rgb(255, 0, 0);
+        z-index: 100;
     }
 }
 
 @media screen and (max-width: 900px){
-    .top-left{
-        position: absolute;
-          top: 7rem;
-          left: 8rem;
-          font-size: 18px;
-        }
-        
-        .top-left-small{
-            position: absolute;
-            top: 10.5rem;
-            left: 9rem;
-            font-size: 14px;
-            font-weight: bold;
-            color: #000000;
-            background-color: rgba(0, 255, 255, 0.834);
-            opacity: 0.5;
-        } 
+  header{
+    display: none;
+  }
 
+  .top-left{
+    position: absolute;
+      top: 4rem;
+      left: 4rem;
+      font-size: 28px;
+      background: linear-gradient(to right,rgb(153, 245, 255) 0%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    box-shadow: 0 1px #c2c2c2c2;
+    }
+        
+    .top-left-small{
+      position: absolute;
+      top: 7rem;
+      left: 5rem;
+      font-size: 20px;
+      font-weight: 1000;
+      background: linear-gradient(to right,rgba(162, 163, 163, 0.922) 0%,rgb(145, 255, 244) ,rgb(66, 157, 255) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+} 
         .first .text p, .second .text2 p{
             text-wrap: wrap;
             text-align: justify;
@@ -353,26 +393,63 @@ footer{
             text-align: center;
             
         }
+
+        .bottom-center{
+          position: absolute;
+          bottom: 3rem;
+          left: 1rem;
+          font-size: 22px;
+          background: linear-gradient(45deg, rgb(135, 217, 238), rgb(146, 129, 255), rgb(255, 124, 124));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: 1000;
+          box-shadow: 1px 1px rgb(255, 0, 0);
+          z-index: 100;
+      }
 }
 
 @media screen and (max-width: 760px) {
-    .top-left{
-        position: absolute;
-          top: 6rem;
-          left: 8rem;
-          font-size: 18px;
-        }
+  header{
+    display: none;
+  }
+  
+  .top-left{
+    position: absolute;
+      top: 2rem;
+      left: 4rem;
+      font-size: 24px ;
+      background: linear-gradient(to right,rgb(153, 245, 255) 0%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    box-shadow: 0 1px #c2c2c2c2;
+    }
         
-        .top-left-small{
-            position: absolute;
-            top: 9.5rem;
-            left: 9rem;
-            font-size: 14px;
-            font-weight: bold;
-            color: #000000;
-            background-color: rgba(0, 255, 255, 0.834);
-            opacity: 0.5;
-        } 
+    .top-left-small{
+      position: absolute;
+      top: 5rem;
+      left: 5rem;
+      font-size: 18px;
+      font-weight: 1000;
+      background: linear-gradient(to right,rgba(162, 163, 163, 0.922) 0%,rgb(145, 255, 244) ,rgb(66, 157, 255) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+} 
+
+.bottom-center{
+  position: absolute;
+  bottom: 2rem;
+  left: 10px;
+  font-size: 20px;
+  background: linear-gradient(45deg, rgb(135, 217, 238), rgb(146, 129, 255), rgb(255, 124, 124));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  text-align: left;
+  box-shadow: none;
+  z-index: 100;
+}
 
         .second{
             display: flex;
@@ -392,9 +469,10 @@ footer{
 
         .first video{
             width: 300px;
-            height: 400px;
+            height: 250px;
             margin: 10px 20px;
             float: left;
+            object-fit: cover;
         }
 
         .first .text p, .second .text2 p{
@@ -403,6 +481,90 @@ footer{
             line-height: 1.5;
             margin: 10px 10px;
             font-size: 12px;
+        }
+
+        
+    
+}
+
+@media screen and (max-width: 560px) {
+  header{
+    display: none;
+  }
+  
+  .top-left{
+    position: absolute;
+      top: 0;
+      left: 4rem;
+      font-size: 22px;
+      background: linear-gradient(to right,rgb(153, 245, 255) 0%, rgb(255, 255, 255) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 1000;
+      box-shadow: 0 1px #c2c2c2c2;
+    }
+        
+    .top-left-small{
+            position: absolute;
+            top: 3rem;
+            left: 4rem;
+            font-size: 18px;
+            font-weight: 1000;
+            background: linear-gradient(to right,rgba(162, 163, 163, 0.922) 0%,rgb(145, 255, 244) ,rgb(66, 157, 255) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+
+            
+    } 
+
+
+    .bottom-center{
+      position: absolute;
+      bottom: 2rem;
+      left: 10px;
+      font-size: 20px;
+      background: linear-gradient(45deg, rgb(135, 217, 238), rgb(146, 129, 255), rgb(255, 124, 124));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+      box-shadow: none;
+      z-index: 100;
+  }
+        .second{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            
+            
+        }
+
+        .second video{
+            height: 250px;
+            width: 250px;
+            margin: 20px 30px;
+           
+        }
+
+        .first video{
+            width: 300px;
+            height: 200px;
+            margin: 10px 20px;
+            float: left;
+            object-fit: cover;
+        }
+
+        .first .text p, .second .text2 p{
+            text-wrap: wrap;
+            text-align: justify;
+            line-height: 1.5;
+            margin: 10px 10px;
+            font-size: 10px;
+        }
+
+        .text h1, .text2 h1{
+          font-size: 14px;
         }
     
 }
@@ -413,82 +575,161 @@ footer{
 /*Registration Form*/
 
 #form-container{
-  display: none; 
-  position: fixed; 
-  z-index: 10; 
-  left: 0;
+  
+  height: 100%;
+  width: 100%;
+  z-index: 100; 
+  position: absolute;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto scroll; 
+  left: 0;
   scroll-behavior: smooth;
-  background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
-  padding-top: 60px;
+  display: none;
+  
 }
 
 
-.registeration-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(162, 197, 203);
-  width: 40rem;
-  border: black solid 2pt;
-  padding: 20px 100px 20px 130px;
-  margin-top: 20px;
-  border-radius: 2rem;
+
+#form-container .page{
+ 
+  height: 375px;
+  width: 350px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 25px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(145, 230, 239, 0.1);
+  padding: 20px;
+  box-shadow: 0 0 50px rgb(3, 177, 189);
+  z-index: 100;
   margin: 5% auto 15% auto;
+  
+  
+  
+
 
 }
 
-.title-BMW, .signin-BMW{
+
+.front-login h1{
   text-align: center;
+  color: white;
+}
+
+.front-login .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
 
 }
 
-
-
-
-.label-login{
-  font-size: 20px;
-  font-weight: bold;
+.front-login .input-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
 }
 
-.input-login{
-  width: 380px;
-  height: 30px;
-  background-color: #babcbc ;
+.front-login .input-box .bx{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 22px;
+  
 }
 
-.label-login, .input-login{
-  margin: 10px;
+.front-login .input-box input::placeholder{
+  color: white;
 }
 
-.bottom-btn{
+.front-login .remember-link{
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
+  margin: -15px 0 15px;
+  color: white;
 }
 
-.btn-reg{
-  width: 150px;
-  height: 26px;
-  background-color: rgb(134, 66, 245);
-}
-.btn-cancel{
-  width: 150px;
-  height: 26px;
-  background-color: #f4692d;
+.front-login .remember-link input{
+  margin-right: 5px;
+  
 }
 
-.btn-reg:hover{
-  background-color: #bd0dee;
+.front-login .remember-link a{
+  text-decoration: none;
+  color: white;
 }
 
-.btn-cancel:hover{
-  background-color: red;
+.front-login .remember-link a:hover{
+  text-decoration: underline;
+  font-weight: 600;
 }
 
+.front-login .btn-login{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 6px 6px 12px rgba(0, 0, 255, 0.1);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+
+}
+
+.front-login .btn-login::before{
+  content: "";
+  width:  0;
+  height: 40px;
+  border-radius: 20px;
+  background-image: linear-gradient(45deg,
+  #bfdae5 0%, #616ae4 100%);
+  transition: -5s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+}
+
+.front-login .btn-login:hover::before{
+  width: 100%;
+  
+}
+
+.front-login .register{
+  font-size: 12px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  
+
+}
+
+.front-login .register a{
+  text-decoration: none;
+  color: white;
+  
+
+}
+
+.front-login .register a:hover{
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
 
 
 

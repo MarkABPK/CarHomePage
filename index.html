@@ -27,7 +27,47 @@
     <!--nevigation-->
 
     <!---body-->
+
+
+
     <main>
+        <!---LoginForm-->
+        <div id="form-container">
+            <div class="page front-login animate">
+                <form action="">
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="password" required>
+                        <i class='bx bxs-lock'></i>
+                    </div>
+                    <div class="remember-link">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forget password</a>
+
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+
+                    <div class="register">
+                        <span>Don't have an account?</span> 
+                        <a onclick="openTab()">Register Here</a>
+                        
+                    </div>
+                    
+                </form>
+              
+
+               
+
+            </div>
+
+        </div>
+        <!---LoginForm end-->
+
+
         <section class="cover">
             <div class="cover-display-container">
                 <img class="coverpic" style="display: block;" src="./image/cover.jpg" style="width:100%">
@@ -44,39 +84,11 @@
         </section>
 
 
-        <!---LoginForm-->
-        <div id="form-container">
         
-            <form class="registeration-form animate">
-                <h1 class="title-BMW">BMW Registration Form</h1>
-               <span class="signin-BMW">Already have a BMW ID? Login <a href="#">here.</a></span>
-    
-                <label class="label-login" for="fname">First name*</label>
-                <input class="input-login" type="text" id="fname" name="fname" required>
-    
-                <label class="label-login" for="Lname">Last name*</label>
-                <input class="input-login" type="text" id="fname" name="fname" required>
-    
-                <label class="label-login" for="email">Email Address*</label>
-                <input class="input-login" type="email" id="email" name="email" required>
-    
-                <label class="label-login" for="password">Passoword*</label>
-                <input class="input-login" type="password" id="password" name="password" required>
-                
-                <div class="bottom-btn">
-                    <button class="btn-reg"><a>Register</a></button>
-                    <button class="btn-cancel" onclick="document.getElementById('form-container').style.display='none'"><a>Cancel</a></button>
-    
-                </div>
-                
-    
-            </form>
-        </div>
-        <!---LoginForm-->
     
         
 
-        <section class="detail">
+        <div class="detail">
             <div class="first">
                 <video src="./image/interior.mp4" autoplay muted loop></video>
                 <div class="text">
@@ -99,7 +111,7 @@
 
 
             
-        </section>
+        </div>
 
         
     </main>
