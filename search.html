@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
-<body>
+<body class="videobg" >
     <!--background-->
     <video autoplay muted loop id="intro" onclick="document.getElementById('example-items').style.display='none'">
-        <source src="./image/About.mp4" type="video/mp4">
+        <source src="./image/About.mp4" type="video/mp4" >
     </video>
     <!--background-->
 
@@ -18,18 +18,28 @@
 
      <!--nevigation-->
      <header>
-        <a class="logo" href="https://www.bmw.com/en/index.html">
-            <img src="./image/Logo.png" alt="logo" >B M W
-        </a>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./image/Logo.png" alt="logo" width="75px" height="40px">
+            </div>
+            <ul>
+                <li class="hidenav active"><a href="index.html">Home</a></li>
+                <li class="hidenav"><a href="search.html">Search</a></li>
+                <li class="hidenav"><a href="#">Model & Pricing</a></li>
+                <li class="hidenav"><a href="#">Contact Us</a></li>
+            </ul>
+            <button onclick="openSignInPage()" class="hidenav btn-signin">Sign In</button>
+            <span onclick="opensidebar()" ><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
+        </div>
         
-        <ul class="navbar">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="search.html" class="active">Search</a></li>
-            <li><a href="models.html">Models & Pricing</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+        <ul class="sidebar">
+            <span onclick="closesidebar()" class="cross"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Model & Pricing</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <button onclick="openSignInPage()" class="btn-signin">Sign In</button>
         </ul>
-
-        <button class="btn" onclick="document.getElementById('form-container').style.display='block'">Sign In</button>
         
     </header>
     <!--nevigation-->
@@ -100,7 +110,7 @@
 
 
     <!---LoginForm-->
-    <div id="form-container">
+    <div id="form-container" onclick="closeSignInPage()">
         <div class="page front-login animate">
             <form action="">
                 <h1>Login</h1>
@@ -121,7 +131,7 @@
 
                 <div class="register">
                     <span>Don't have an account?</span> 
-                    <a onclick="openTab()">Register Here</a>
+                    <a >Register Here</a>
                     
                 </div>
                 
@@ -139,14 +149,7 @@
     
 
     <!--login form close when click on out side the form-->
-    <script>
-        var form_container = document.getElementById("form-container");
-
-        window.onclick = function(close) {
-            if (close.target == form_container) {
-                form_container.style.display = "none";
-            }
-        }
+    <script src="app.js">
     </script>
     <!--login form close when click on out side the form-->
 </body>

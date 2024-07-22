@@ -24,3 +24,21 @@ var form_container = document.getElementById("form-container");
                 form_container.style.display = "none";
             }
         }
+
+
+
+
+function opensidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex'
+}
+
+function closesidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none'
+}
+
+function openSignInPage(){
+  const signinPage = document.getElementById('form-container');
+  signinPage.style.display = 'block'
+}
